@@ -3,20 +3,9 @@ $> SimpTerm
 
 A simple terminal written in Python.
 
-###$>_wget https://google.com/index.html --no-check-certificate_
+##Installation
 
-###$>_--2014-09-30 14:30:49--  https://google.com/index.html_
+Run the following command in your terminal.
+`sudo bash`
 
-###_Resolving google.com (google.com)... 74.125.233.97, 74.125.233.105,_
-
-###_74.125.233.98, ..._
-
-###_Connecting to google.com (google.com)|74.125.233.97|:443... connected._
-
-###_HTTP request sent, awaiting response... 404 Not Found_
-
-###_2014-09-30 14:30:50 ERROR 404: Not Found._
-
-###$>
-
-###$>_exit_
+`wget `
