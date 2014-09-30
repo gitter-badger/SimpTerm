@@ -5,6 +5,7 @@ class AppInfo():
 class Configuration():
     init_onstartup = False
     update_using_git = False
+    wget_no_cert = False
 app = AppInfo()
 config = Configuration()
 def init():
@@ -34,13 +35,15 @@ def Updates():
         print("Fetching files... [100%]")
         print("Update completed!")
     else:
+        if config.wget_no_cert == True: flag = " --no-check-certificate"
+        else: flag = ""
         print("Getting updates...")
         print("Fetching file [1 of 3]")
-        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/term.py")
+        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/term.py" + flag)
         print("Fetching file [2 of 3]")
-        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/LICENSE")
+        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/LICENSE" + flag)
         print("Fetching file [3 of 3]")
-        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/README.md")
+        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/README.md" + flag)
         print("Update completed!")
     term()
 def read_config():
