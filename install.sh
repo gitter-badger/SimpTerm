@@ -1,5 +1,9 @@
+echo "Asking for root access..."
+sudo bash
+echo "Updating apt-get now..."
+apt-get update
 echo "Checking requirements..."
-sudo apt-get install git wget python
+apt-get install git wget python
 echo "Carrying on with installation..."
 echo "Installing SimpTerm..."
 echo "Changing directory to \bin ..."
