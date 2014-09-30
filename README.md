@@ -3,27 +3,20 @@ $> SimpTerm
 
 A simple terminal written in Python.
 
-``
-$>about
-SimpTerm v1.0.0.0
+###$>_wget https://google.com/index.html --no-check-certificate_
 
-$>
+###$>_--2014-09-30 14:30:49--  https://google.com/index.html_
 
-$>wget https://google.com/index.html --no-check-certificate
+###_Resolving google.com (google.com)... 74.125.233.97, 74.125.233.105,_
 
-$>--2014-09-30 14:30:49--  https://google.com/index.html
+###_74.125.233.98, ..._
 
-Resolving google.com (google.com)... 74.125.233.97, 74.125.233.105,
+###_Connecting to google.com (google.com)|74.125.233.97|:443... connected._
 
-74.125.233.98, ...
+###_HTTP request sent, awaiting response... 404 Not Found_
 
-Connecting to google.com (google.com)|74.125.233.97|:443... connected.
+###_2014-09-30 14:30:50 ERROR 404: Not Found._
 
-HTTP request sent, awaiting response... 404 Not Found
+###$>
 
-2014-09-30 14:30:50 ERROR 404: Not Found.
-
-$>
-
-$>exit
-``
+###$>_exit_
