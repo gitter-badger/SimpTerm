@@ -8,6 +8,13 @@ A simple terminal written in Python.
 ##Installation
 
 Run the following command in your terminal.
-`sudo bash`
 
-`wget `
+`wget https://github.com/deavmi/SimpTerm/releases/download/1.0.0.0-prerelease/install.sh`
+
+If the above command fails run it like this:
+
+`wget https://github.com/deavmi/SimpTerm/releases/download/1.0.0.0-prerelease/install.sh --no-check-certificate`
+
+Now that the installation script is downloaded, run it like this:
+
+`sh install.sh`
