@@ -3,7 +3,7 @@ $> SimpTerm
 
 [![Build Status](https://travis-ci.org/deavmi/SimpTerm.svg?branch=master)](https://travis-ci.org/deavmi/SimpTerm)
 
-A simple terminal written in Python.
+A simple terminal written in Python for GNU/Linux systems.
 
 ##Installation
 
