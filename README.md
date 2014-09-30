@@ -1,6 +1,8 @@
 $> SimpTerm
 ========
 
+[![Build Status](https://travis-ci.org/deavmi/SimpTerm.svg?branch=master)](https://travis-ci.org/deavmi/SimpTerm)
+
 A simple terminal written in Python.
 
 ###$>_wget https://google.com/index.html --no-check-certificate_
