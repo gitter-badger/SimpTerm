@@ -1,19 +1,27 @@
 'SimpTerm'
+
 import os
+
 class AppInfo():
     version = "1.0.0.0"
+
 class Configuration():
+
     init_onstartup = False
     update_using_git = False
     wget_no_cert = False
+
 app = AppInfo()
+
 config = Configuration()
+
 def init():
-    print("SimpTerm v" + app.version)
-    print()
-    print("")
+
+    print("SimpTerm v" + app.version + "\n\n")
     term()
+
 def term():
+
     term_input = input("$>")
     if term_input == "": term()
     elif term_input == "exit": exit()
@@ -22,12 +30,15 @@ def term():
     else:
         os.system(term_input)
         term()
+
 def About():
+
     print("SimpTerm v" + app.version)
     term()
+
 def Updates():
-    print("SimpTerm v" + app.version)
-    print()
+
+    print("SimpTerm v" + app.version + "\n")
     if config.update_using_git == True:
         print("Getting updates...")
         print("Fetching files... [0%]")
@@ -46,8 +57,11 @@ def Updates():
         os.system("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/README.md" + flag)
         print("Update completed!")
     term()
+
 def read_config():
+
     if config.init_onstartup == True: init()
     else: term()
+
 'Reads the configuration'
 read_config()
