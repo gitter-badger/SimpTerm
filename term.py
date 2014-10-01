@@ -53,11 +53,13 @@ def Updates():
         if config.wget_no_cert == True: flag = " --no-check-certificate"
         else: flag = ""
         print("Getting updates...")
-        print("Fetching file [1 of 3]")
+        print("Fetching file [1 of 4]")
         os.system("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/term.py" + flag)
-        print("Fetching file [2 of 3]")
+        print("Fetching file [2 of 4]")
         os.system("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/LICENSE" + flag)
-        print("Fetching file [3 of 3]")
+        print("Fetching file [3 of 4]")
+        os.system("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/CREDITS.md" + flag)
+        print("Fetching file [4 of 4]")
         os.system("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/README.md" + flag)
         print("Update completed!")
     term()
