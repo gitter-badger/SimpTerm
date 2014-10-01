@@ -1,5 +1,5 @@
 'SimpTerm'
-import subprocess
+import os
 class AppInfo():
     version = "1.0.0.0"
 class Configuration():
@@ -20,7 +20,7 @@ def term():
     elif term_input == "st -about": About()
     elif term_input == "st -update": Updates()
     else:
-        subprocess.Popen(term_input)
+        os.system(term_input)
         term()
 def About():
     print("SimpTerm v" + app.version)
@@ -31,7 +31,7 @@ def Updates():
     if config.update_using_git == True:
         print("Getting updates...")
         print("Fetching files... [0%]")
-        subprocess.Popen("git clone https://github.com/deavmi/SimpTerm.git")
+        os.system("git clone https://github.com/deavmi/SimpTerm.git")
         print("Fetching files... [100%]")
         print("Update completed!")
     else:
@@ -39,11 +39,11 @@ def Updates():
         else: flag = ""
         print("Getting updates...")
         print("Fetching file [1 of 3]")
-        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/term.py" + flag)
+        os.system("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/term.py" + flag)
         print("Fetching file [2 of 3]")
-        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/LICENSE" + flag)
+        os.system("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/LICENSE" + flag)
         print("Fetching file [3 of 3]")
-        subprocess.Popen("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/README.md" + flag)
+        os.system("wget https://raw.githubusercontent.com/deavmi/SimpTerm/master/README.md" + flag)
         print("Update completed!")
     term()
 def read_config():
