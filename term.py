@@ -33,7 +33,11 @@ def term():
 
 def About():
 
-    print("SimpTerm v" + app.version)
+    print("SimpTerm v" + app.version + "\n")
+    print("This software is Free Software.\n"))
+    print("License: https://gnu.org/licenses/gpl.txt")
+    print("Project site: https://deavmi.github.io/SimpTerm")
+    print("Source code: https://github.com/deavmi/SimpTerm\n")
     term()
 
 def Updates():
